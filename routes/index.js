@@ -5,7 +5,7 @@ var MongoClient = mongodb.MongoClient;
 
 //NEED TO ABSTRACT THE MONGO CONNECTION OUT OF THIS! ALSO A CALLBACK? (controller essentially)
 
-var dburl = 'mongodb://:!@ds011321.mlab.com:11321/fcc-tb' || 'mongodb://localhost:27017/fcc-tb'
+var dburl = process.env.MONGODB_MLAB || 'mongodb://localhost:27017/fcc-tb'
 
 router.get('/', function(req, res){
 	res.send('Hello');
