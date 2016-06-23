@@ -1,0 +1,20 @@
+body {
+    margin: 0 0 0 100px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+ol {
+    font-size: 1.3em;
+}
+
+li {
+    padding-top: 5px;
+}
+
+.usage p {
+    color: red;
+}

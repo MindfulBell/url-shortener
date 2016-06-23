@@ -5,10 +5,13 @@ var MongoClient = mongodb.MongoClient;
 
 //NEED TO ABSTRACT THE MONGO CONNECTION OUT OF THIS! ALSO A CALLBACK? (controller essentially)
 
+// process.env.MONGODB_MLAB
 var dburl = process.env.MONGODB_MLAB || 'mongodb://localhost:27017/fcc-tb'
 
+router.use(express.static(__dirname + '/../public'))
+
 router.get('/', function(req, res){
-	res.send('Hello');
+	return res.sendFile('index.html');
 })
 
 router.get('/new/:url(*)', function(req, res){
@@ -17,26 +20,25 @@ router.get('/new/:url(*)', function(req, res){
 	MongoClient.connect(dburl, function(err, db){
 		if (err) {
 			console.log('Unable to connect to mongoDB server. Error: ', err)
+			res.send('Error connecting to database!')
 		}
 		else {
 			console.log('Connection established to ' + dburl)
 
 			var collection = db.collection('urls')
+			var userInput = req.params.url.toString()
 			
 			var shortUrl = Math.floor(Math.random() * (9999-1000) + 1000);
-			var userUrl = req.params.url.toString();
-
-			if (userUrl.slice(0,4).toLowerCase() !== 'http') {
-				userUrl = userUrl.replace(/.+/, 'http://$&')
-			}
+			var userUrl = (userInput.slice(0,4).toLowerCase() !== 'http') ? 
+			userInput.replace(/.+/, 'http://$&') : userInput;
 			
 			//check if shortUrl is already in use
-			collection.find({}).toArray(function(err, arr){
+			collection.find({}).toArray(function(err, docs){
 				if (err) {
 					return console.log(err)
 				}
 				else {
-					var urls = arr.map(function(url){
+					var urls = docs.map(function(url){
 						return url.shortUrl;
 					})				
 					
@@ -46,7 +48,11 @@ router.get('/new/:url(*)', function(req, res){
 					}
 					
 					//insert url pair to db
-					var urlPair = { originalUrl: userUrl, shortUrl: shortUrl };
+					var urlPair = { 
+						original_url: userUrl, 
+						short_url: shortUrl 
+					};
+
 					collection.insert(urlPair, function(err, result){
 						if (err) {
 							console.log(err);
@@ -54,23 +60,26 @@ router.get('/new/:url(*)', function(req, res){
 						}
 						else {
 							console.log('Inserted new url/short url into urls collection')
-							return res.json(urlPair);
 						}
 						db.close();
 					});
+
+					return res.json({
+						original_url: userUrl, 
+						short_url: req.hostname + '/' + shortUrl
+					});
 				}
 			});
-		}
-		
-	})
-	
+		}		
+	})	
 })
 
 router.get('/:shortUrl', function(req, res){
 	//find that short-url in the database and its associated location
 	MongoClient.connect(dburl, function(err, db){
 		if (err) {
-			console.log('Unable to connect to mongoDB server. Error: ', err)
+			console.log('Unable to connect to mongoDB server. Error: ', err);
+			res.send('Error connecting to database!');
 		}
 		else {
 			console.log('Connection established to ' + dburl)
@@ -78,13 +87,13 @@ router.get('/:shortUrl', function(req, res){
 			var collection = db.collection('urls');
 			var userUrl = parseInt(req.params.shortUrl);
 
-			collection.find( {shortUrl: userUrl} ).toArray(function(err, arr){			
+			collection.find( {short_url: userUrl} ).toArray(function(err, arr){			
 				if (err) {
 					return console.log(err)
 				}
 				if (arr.length) {
-					console.log('Redirecting to ' + arr[0].originalUrl)
-					return res.redirect(arr[0].originalUrl)										
+					console.log('Redirecting to ' + arr[0].original_url)
+					return res.redirect(arr[0].original_url)										
 				}
 				else {						
 					console.log('Document not found')
