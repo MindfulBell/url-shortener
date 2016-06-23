@@ -66,7 +66,7 @@ router.get('/new/:url(*)', function(req, res){
 
 					return res.json({
 						original_url: userUrl, 
-						short_url: req.hostname + '/' + shortUrl
+						short_url: req.protocol + '/' + req.hostname + '/' + shortUrl
 					});
 				}
 			});
