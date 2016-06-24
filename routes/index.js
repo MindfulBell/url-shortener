@@ -8,7 +8,7 @@ var myFunc = require('../db-connect.js')
 //NEED TO ABSTRACT THE MONGO CONNECTION OUT OF THIS! ALSO A CALLBACK? (controller essentially)
 
 // process.env.MONGODB_MLAB
-var dburl = 'mongodb://USERNAME:PASSWORD@ds011321.mlab.com:11321/fcc-tb' || 'mongodb://localhost:27017/fcc-tb'
+var dburl = 'mongodb://U:P@ds011321.mlab.com:11321/fcc-tb' || 'mongodb://localhost:27017/fcc-tb'
 
 router.use(express.static(__dirname + '/../public'))
 
