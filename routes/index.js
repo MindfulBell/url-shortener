@@ -1,22 +1,26 @@
 var express = require('express');
-var router = express.Router();
 
-var handleUrl = require('../handleUrl.js')
+var HandleUrl = require('../controllers/handleUrl.js')
 
-module.exports = function(db){
-	router.use(express.static(__dirname + '/../public'))
+module.exports = function(app, db){
+	
+	var handleUrl = new HandleUrl(db);
+	
+	app.use(express.static(__dirname + '/../public')) // can i move this?
 
-	router.get('/', function(req, res){
+	app.get('/', function(req, res){
 		return res.sendFile('index.html');
 	})
-
-	router.get('/new/:url(*)', function(req, res){
-		handleUrl(db).addurl(req.params.url.toString(), req, res);
+	
+	app.get('/new/:url(*)', function(req, res){
+		//create a new short url for the users entry
+		handleUrl.addurl(req.params.url.toString(), req, res);
 	})
-
-	router.get('/:shortUrl', function(req, res){
-		//find that short-url in the database and its associated location
-		handleUrl(db).geturl(parseInt(req.params.shortUrl, req, res));
+	
+	app.get('/:shortUrl', function(req, res){
+		//find that short-url (number) in the database and its associated location
+		handleUrl.geturl(parseInt(req.params.shortUrl), req, res);
 	})
 }
+
 

@@ -8,18 +8,19 @@ var MongoClient = mongodb.MongoClient;
 // process.env.MONGODB_MLAB
 var dburl = 'mongodb://MindfulBell:Dontmlab02!@ds011321.mlab.com:11321/fcc-tb' || 'mongodb://localhost:27017/fcc-tb'
 
+
 MongoClient.connect(dburl, function(err, db){
 	if (err) {
 		console.log('Unable to connect to mongoDB server. Error: ', err)
 	}
 	else {
 		console.log('Connection established to ' + dburl)
-		
-		app.listen(PORT, function(req, res){
-		    console.log('Listening on port ' + PORT);
-		});
-		
-		routes(db);
-		app.use('/', routes); // are key here...
 	}
+	
+	routes(app, db);
+	
+	app.listen(PORT, function(req, res){
+        console.log('Listening on port ' + PORT);
+    });
 })
+
