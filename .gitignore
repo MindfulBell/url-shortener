@@ -1,4 +1,4 @@
 /node_modules
-url-shortener.sublime-project
-.eslintrc
-.babelrc
+/url-shortener.sublime-project
+/.eslintrc
+/.babelrc
