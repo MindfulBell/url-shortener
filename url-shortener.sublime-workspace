@@ -1,0 +1,541 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"id",
+				"id"
+			],
+			[
+				"local",
+				"localStorage"
+			],
+			[
+				"props",
+				"props	React: this.props"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "routes/index.js",
+			"settings":
+			{
+				"buffer_size": 660,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "controllers/handleUrl.js",
+			"settings":
+			{
+				"buffer_size": 1785,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server.js",
+			"settings":
+			{
+				"buffer_size": 666,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 418.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Tim/Programming/projects/url-shortener/.eslintrc",
+		"/C/Users/Tim/Programming/projects/url-shortener/url-shortener.sublime-project",
+		"/C/Users/Tim/Programming/projects/url-shortener/public/style.css",
+		"/C/Users/Tim/Programming/projects/url-shortener/public/index.html",
+		"/C/Users/Tim/Programming/projects/url-shortener/db-connect.js",
+		"/C/Users/Tim/Programming/projects/url-shortener/app.js",
+		"/C/Users/Tim/Programming/projects/url-shortener/package.json",
+		"/C/Users/Tim/Programming/projects/url-shortener/views/layouts/main.hbs",
+		"/C/Users/Tim/Programming/projects/url-shortener/server.js",
+		"/C/Users/Tim/Programming/projects/url-shortener/views/partials/head.hbs",
+		"/C/Users/Tim/Programming/projects/url-shortener/views/index.hbs",
+		"/C/Users/Tim/AppData/Roaming/Sublime Text 3/Packages/User/ESLint.sublime-settings",
+		"/C/Users/Tim/Programming/projects/url-shortener/.gitignore",
+		"/C/Users/Tim/Programming/projects/req-header-parser/views/partials/head.hbs",
+		"/C/Users/Tim/Programming/projects/req-header-parser/views/layouts/main.hbs",
+		"/C/Users/Tim/Programming/projects/req-header-parser/server.js",
+		"/C/Users/Tim/Programming/projects/req-header-parser/package.json",
+		"/C/Users/Tim/.ssh/id_rsa.pub",
+		"/C/Users/Tim/Programming/node course/web-server/.gitignore",
+		"/C/Users/Tim/Programming/node course/async/example-promise-2.js",
+		"/C/Users/Tim/Programming/node course/async/example-promise.js",
+		"/C/Users/Tim/Programming/node course/async/package.json",
+		"/C/Users/Tim/Programming/node course/async/app.js",
+		"/C/Users/Tim/Programming/node course/async/hello-async.js",
+		"/C/Users/Tim/Programming/example-callback.js",
+		"/C/Users/Tim/Programming/node course/async/example-callback.js",
+		"/C/Users/Tim/Programming/projects/roguelike/src/client/public/css/style.scss",
+		"/C/Users/Tim/Programming/projects/roguelike/src/client/app/components/cell.js",
+		"/C/Users/Tim/Programming/projects/roguelike/src/client/app/components/layout.js",
+		"/C/Users/Tim/Programming/projects/roguelike/src/client/app/reducers/layout-reducer.js",
+		"/C/Users/Tim/Programming/projects/roguelike/src/client/app/components/app.js",
+		"/C/Users/Tim/Programming/projects/roguelike/src/client/index.html",
+		"/C/Users/Tim/Programming/projects/roguelike/src/client/app/reducers/index.js",
+		"/C/Users/Tim/Programming/projects/roguelike/src/client/app/utils/index.js",
+		"/C/Users/Tim/Programming/projects/roguelike/README.md",
+		"/C/Users/Tim/Programming/projects/roguelike/src/client/public/bundle.js.map",
+		"/C/Users/Tim/Programming/projects/roguelike/src/client/app/containers/layout-container.js",
+		"/C/Users/Tim/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Tim/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Tim/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/Tim/Programming/projects/react-redux-boilerplate/src/client/public/bundle.js.map",
+		"/C/Users/Tim/Programming/projects/react-redux-boilerplate/src/client/public/bundle.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/package.json",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/public/bundle.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/public/bundle.js.map",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/app/routes/Portfolio-Piece.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/app/index.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/app/routes/Contact.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/app/routes/NavBar.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/app/portfolio-filter.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/app/portfoliodata.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/public/css/style.scss",
+		"/C/Users/Tim/Programming/projects/portfolio-page/webpack.config.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/app/continue-link.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/app/routes/Layout.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/app/progress-bar.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/public/css/landing.jpg",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/index.html",
+		"/C/Users/Tim/AppData/Roaming/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
+		"/C/Users/Tim/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/app/routes/NavLink.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/server.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/app/routes/Portfolio.js",
+		"/C/Users/Tim/Programming/projects/portfolio-page/src/client/app/routes/Home-About.js",
+		"/C/Users/Tim/Programming/react-router-tutorial/lessons/01-setting-up/package.json",
+		"/C/Users/Tim/Programming/projects/portfolio-page/README.md",
+		"/C/Users/Tim/Programming/projects/fitness-todo/package.json",
+		"/C/Users/Tim/Programming/projects/fitness-todo/webpack.config.js",
+		"/C/Users/Tim/Programming/projects/fitness-todo/src/client/index.html",
+		"/C/Users/Tim/Programming/projects/fitness-todo/src/client/app/components/video.js",
+		"/C/Users/Tim/Programming/projects/fitness-todo/src/client/public/css/style.scss",
+		"/C/Users/Tim/Programming/projects/game-of-life/src/client/index.html",
+		"/C/Users/Tim/Programming/ign-application/scrabble/scrabble.js",
+		"/C/Users/Tim/Programming/ign-application/Lego Question/Lego.txt",
+		"/C/Users/Tim/Programming/ign-application/front-end project/src/client/public/css/style.scss",
+		"/C/Users/Tim/Programming/ign-application/front-end project/src/client/app/item.js",
+		"/C/Users/Tim/Programming/ign-application/front-end project/src/client/app/item_list.js",
+		"/C/Users/Tim/Programming/ign-application/front-end project/src/client/app/index.jsx",
+		"/C/Users/Tim/Programming/ign-application/front-end project/src/client/index.html",
+		"/C/Users/Tim/Programming/scrabble/scrabble/scrabble.js",
+		"/C/Users/Tim/Programming/scrabble/scrabble/index.html",
+		"/C/Users/Tim/Programming/projects/ign-test/src/client/app/components/video_item.js",
+		"/C/Users/Tim/Programming/projects/ign-test/src/client/app/components/article_item.js",
+		"/C/Users/Tim/Programming/projects/ign-test/src/client/app/components/item_list.js",
+		"/C/Users/Tim/Programming/projects/ign-test/package.json",
+		"/C/Users/Tim/Programming/react-fundamentals/lessons/08-lifecycle-mounting/App.js",
+		"/C/Users/Tim/Programming/react-fundamentals/lessons/08-lifecycle-mounting/main.js",
+		"/C/Users/Tim/Programming/react-fundamentals/lessons/08-lifecycle-mounting/index.html",
+		"/C/Users/Tim/Programming/react-redux-course/ReduxSimpleStarter/style/style.css",
+		"/C/Users/Tim/Programming/projects/fitness-todo/src/client/app/actions/add_exercise.js",
+		"/C/Users/Tim/Programming/projects/fitness-todo/src/client/app/actions/complete_exercise.js",
+		"/C/Users/Tim/Programming/projects/fitness-todo/src/client/app/actions/remove_exercise.js",
+		"/C/Users/Tim/Programming/projects/fitness-todo/src/client/app/reducers/index.js",
+		"/C/Users/Tim/Programming/projects/react-starter/package.json",
+		"/C/Users/Tim/Programming/projects/react-starter/index.js",
+		"/C/Users/Tim/Programming/projects/react-starter/styles/main.scss",
+		"/C/Users/Tim/Programming/react-redux-course/weather/src/index.js",
+		"/C/Users/Tim/Programming/react-redux-course/weather/src/components/google_map.js",
+		"/C/Users/Tim/Programming/react-redux-course/weather/src/components/chart.js",
+		"/C/Users/Tim/Programming/react-redux-course/weather/style/style.css",
+		"/C/Users/Tim/Programming/react-redux-course/weather/src/containers/weather_list.js",
+		"/C/Users/Tim/Programming/react-redux-course/weather/src/components/app.js",
+		"/C/Users/Tim/Programming/react-redux-course/weather/src/actions/index.js",
+		"/C/Users/Tim/Programming/react-redux-course/weather/src/containers/search_bar.js",
+		"/C/Users/Tim/Programming/react-starter-browserify/package.json",
+		"/C/Users/Tim/Programming/react-fundamentals/lessons/06-refs/App.js",
+		"/C/Users/Tim/Programming/react-fundamentals/lessons/06-refs/main.js",
+		"/C/Users/Tim/Programming/react-fundamentals/lessons/05-owner-ownee/App.js",
+		"/C/Users/Tim/Programming/react-fundamentals/lessons/05-owner-ownee/index.html",
+		"/C/Users/Tim/Programming/react-fundamentals/lessons/05-owner-ownee/main.js",
+		"/C/Users/Tim/Programming/react-fundamentals/lessons/04-state/main.js",
+		"/C/Users/Tim/Programming/react-fundamentals/lessons/04-state/App.js",
+		"/C/Users/Tim/Programming/react-redux-course/redux-project/index.html",
+		"/C/Users/Tim/Programming/react-redux-course/redux-project/src/index.js",
+		"/C/Users/Tim/Programming/react-redux-course/redux-project/src/actions/index.js",
+		"/C/Users/Tim/Programming/projects/redux-playground/src/reducers/reducer_books.js",
+		"/C/Users/Tim/Programming/projects/redux-playground/index.html",
+		"/C/Users/Tim/Programming/projects/redux-playground/README.md",
+		"/C/Users/Tim/Programming/projects/react-redux-boilerplate/src/client/app/index.jsx",
+		"/C/Users/Tim/Programming/projects/react-redux-boilerplate/src/client/app/recipe.jsx",
+		"/C/Users/Tim/Programming/projects/react-redux-boilerplate/src/client/public/css/style.scss",
+		"/C/Users/Tim/Programming/projects/react-redux-boilerplate/webpack.config.js",
+		"/C/Users/Tim/Programming/projects/react-template-2/webpack.config.js",
+		"/C/Users/Tim/Programming/projects/react-recipe-box/src/client/app/recipe-box.jsx",
+		"/C/Users/Tim/Programming/projects/react-recipe-box/src/client/public/css/style.scss",
+		"/C/Users/Tim/Programming/projects/react-recipe-box/src/client/app/addbox.jsx",
+		"/C/Users/Tim/Programming/projects/my-projects/simon-game/script.js",
+		"/C/Users/Tim/Programming/projects/my-projects/pomodoro-timer/index.js"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"}",
+			"req.params.url.toString()",
+			"originalUrl",
+			"h3",
+			"CCFF66",
+			"#EDF7B5",
+			"span",
+			"h3",
+			"1 ",
+			"2 ",
+			"4 ",
+			"0 ",
+			"3 ",
+			"0",
+			"3 ",
+			"2 ",
+			"1 ",
+			"4 ",
+			"0 ",
+			"1",
+			"/public/css/port-images",
+			"Check",
+			"<input",
+			"<label>",
+			"\"false\"",
+			"false",
+			"checked={false}",
+			"false",
+			"\"false\"",
+			"unchecked",
+			"8eaa62cacd6daa4e83c0011fc864d960.jpg",
+			"img: ''",
+			"active: 'https://htmlpreview.github.io/?'",
+			"active: 'https://htmlpreview.github.io/?' ",
+			"active: 'https://htmlpreview.github.io/?'",
+			"acitve: ''",
+			"link",
+			"        \n",
+			"example",
+			"class",
+			"path",
+			"link",
+			"NavLink",
+			"Link",
+			"darkgray",
+			"#9E9E9E",
+			"#C20000",
+			"this.props",
+			"all",
+			"B8B6B6",
+			"C4C4C4",
+			"D3D3D3",
+			"gray",
+			"30deg",
+			"rotate",
+			"let",
+			"var",
+			"strspn",
+			"var dictionary = [\nachievement\nacid\naction\nadventure\nallspark\nammo\narpg\nassassin\nasteroid\nautosave\navatar\navenger\nbeta\nblade\nblast\nblock\nblood\nboss\nbuff\nbullet\nbuster\ncheckpoint\ncheese\nchrono\nclaptrap\nclass\nclosed\nconsole\ncontroller\ncooldown\ncorruption\ncounter\ncover\ncpu\ncrafting\ncreed\ncrouch\ncrpg\ncutscene\ncutting\ndamage\ndifficulty\ndig\ndlc\ndodge\ndoublejump\ndrm\ndungeon\ndweller\nearly\nedge\nemergent\nendings\nepisodic\nescort\nesports\nevent\nexclusive\nexploit\nexplosion\nfall\nfarm\nfarming\nfasttravel\nfield\nfight\nfinished\nfireball\nfog\nfree\ngame\nganon\ngauntlet\ngem\ngeneration\nghost\ngod\ngpu\ngrenade\ngriefer\ngrinding\ngun\nhalo\nhardmode\nhealer\nhealth\nhorror\nifrit\nindie\ninfinity\ninstance\ninvader\njoystick\njrpg\njump\nkeyblade\nkeyboard\nkill\nlag\nlane\nleroy\nlevel\nlightning\nlink\nlive\nludology\nmage\nmagus\nmana\nmario\nmasamune\nmaster\nmatchmaking\nmateria\nmegaman\nmicrotransactions\nmiddleware\nmidgar\nmission\nmmorpg\nmob\nmoba\nmode\nmonster\nmouse\nmouselook\nmultiple\nmyst\nnerf\nnintendo\nnoob\nnpc\nnvidia\nopenworld\noptimus\noverpowered\novershield\npacman\npass\npellet\npermadeath\npersistent\npickaxe\npierce\npixel\nplasma\nplay\npoison\nport\npotion\nprocedural\npuzzle\npve\npvp\nquest\nquick\nraid\nrealtime\nreplay\nretrogaming\nrig\nrocket\nroguelike\nromance\nrpg\nseason\nshield\nshoot\nshovel\nsimulator\nsli\nsliding\nsmash\nsouls\nspawn\nspeedrun\nspread\nsprint\nstealth\nstrategy\nstreak\nsummon\nsuper\nsurvival\nsword\nsystem\ntactics\ntank\ntesseract\ntheory\ntime\ntouchscreen\ntriforce\nuppercut\nvault\nwalljump\nwar\nwarrior\nwasd\nwasteland\nworld\nzelda\nzombie\n]",
+			"onToggle",
+			"onRemoveClick",
+			"();\n",
+			"      \n",
+			"storageArr",
+			"for",
+			"collapseOne",
+			"recipeOne",
+			"==",
+			" \n",
+			"var",
+			"function()",
+			"var"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"1, ",
+			"2, ",
+			"4, ",
+			"0, ",
+			"3, ",
+			"0, ",
+			"3, ",
+			"2, ",
+			"1, ",
+			"4, ",
+			"0, ",
+			"recipeArr",
+			"htmlFor",
+			"recipeOne",
+			"collapseOne",
+			"===",
+			"let",
+			"() => ",
+			"let"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "routes/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 660,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128,
+								128
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "controllers/handleUrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1785,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1785,
+								1785
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "server.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 666,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								545,
+								545
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 200.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "url-shortener.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

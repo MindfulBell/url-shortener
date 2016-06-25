@@ -44,8 +44,8 @@ function HandleUrl (db){
 					short_url: 'https://' + req.hostname + '/' + shortUrl
 				});
 			}
-		});
-	}
+		});}
+		
 	this.geturl = function(userInput, req, res){
 		
 		//get the url associated with the shortUrl param and redirect to that site
@@ -63,8 +63,7 @@ function HandleUrl (db){
 				console.log('Document not found');
 				return res.send('Sorry, we could not find that url')			
 			}
-		})
-	}
+		})}
 }
 
 module.exports = HandleUrl;
