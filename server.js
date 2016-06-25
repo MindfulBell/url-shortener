@@ -6,7 +6,7 @@ var mongodb = require('mongodb');
 var MongoClient = mongodb.MongoClient;
 
 // process.env.MONGODB_MLAB
-var dburl = 'mongodb://USER:PASS@ds011321.mlab.com:11321/fcc-tb' || 'mongodb://localhost:27017/fcc-tb'
+var dburl = 'mongodb:// U:P @ds011321.mlab.com:11321/fcc-tb' || 'mongodb://localhost:27017/fcc-tb'
 
 
 MongoClient.connect(dburl, function(err, db){
